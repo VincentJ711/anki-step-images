@@ -60,6 +60,12 @@ The following is the html structure used for the carousel. This may help if you 
 ```
 
 ### example - tying a knot
+Given the following (partial) entered into a field value text area:
+
+![knot-demo](https://user-images.githubusercontent.com/25497140/97955827-00a5e180-1d5c-11eb-9aab-788bf09e0d68.jpg)
+
+the following carousel will be generated:
+
 ![example carousel](https://user-images.githubusercontent.com/25497140/97954906-a277ff00-1d59-11eb-9b44-c40c2db8fc44.gif)
 
 ### developing
@@ -69,3 +75,9 @@ To generate `knot-demo.gif`, I used quicktime screen recording to create a .mov 
 ```
 ffmpeg -i knot-demo.mov -s 400x526 -r 10 knot-demo.gif
 ```
+
+### deploying
+```
+python build.py dist
+```
+the .addon file you need to upload will be placed in `dist/`. for the description you enter @ https://ankiweb.net/shared/upload paste this README and edit accordingly.
